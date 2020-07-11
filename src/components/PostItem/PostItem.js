@@ -12,8 +12,7 @@ let touched = false;
 const PostItem = ({ collection }) => {
   const [hovering, setHovering] = useState(false);
   const {
-    smallImage,
-    frontmatter: { title, category },
+    frontmatter: { title, category, smallImage },
     fields,
   } = collection;
   const { small } = smallImage.childImageSharp;
