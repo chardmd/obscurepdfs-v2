@@ -34,6 +34,28 @@ export const pageQuery = graphql`
       edges {
         node {
           ..._MarkdownRemark
+          frontmatter {
+            bigImage: image {
+              childImageSharp {
+                # Here we query for *multiple* image thumbnails to be
+                # created. So with no effort on our part, 100s of
+                # thumbnails are created. This makes iterating on
+                # designs effortless as we change the args
+                # for the query and we get new thumbnails.
+                big: fluid(maxWidth: 640) {
+                  src
+                  srcSet
+                }
+              }
+            }
+            smallImage: image {
+              childImageSharp {
+                small: fluid(maxWidth: 292, maxHeight: 292) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -27,6 +27,7 @@
     "gatsby-plugin-sitemap": "^2.4.10",
     "gatsby-plugin-typography": "^2.5.2",
     "gatsby-remark-images": "^3.3.18",
+    "gatsby-remark-normalize-paths": "^1.0.0",
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-json": "^2.4.3",
     "gatsby-transformer-remark": "^2.8.25",

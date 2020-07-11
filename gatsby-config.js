@@ -45,6 +45,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-remark-normalize-paths",
+      options: {
+        pathFields: ["image"],
+      },
+    },
     // This plugin exposes helper functions for processing
     // images with the NPM package “sharp”. It's used by
     // several other plugins.
