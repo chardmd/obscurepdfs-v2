@@ -5,8 +5,6 @@
 @import "~bootswatch/dist/cosmo/bootswatch";
 
 @import "~normalize-scss";
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
 
 html {
   position: relative;
@@ -16,11 +14,4 @@ html {
 /** override react-bootstrap font style in body **/
 body {
   font-family: Lora, sans-serif;
-}
-
-/** removed default css outline when selecting the item in the slide **/
-.slick-slide {
-  div:focus {
-    outline: none;
-  }
 }

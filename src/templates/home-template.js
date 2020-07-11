@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 // react-strap
 import { Container } from "react-bootstrap";
 
-import Carousel from "../components/Carousel";
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
 import SEO from "../components/SEO";
@@ -18,10 +17,6 @@ const Index = ({ location, data }) => {
       <SEO />
       <Banner />
       <Container>
-        <h4 className="pb-4 mb-4 mt-4 font-italic border-bottom">
-          Featured Artists
-        </h4>
-        <Carousel />
         <h4 className="pb-4 mb-4 mt-5 font-italic border-bottom">
           From the Collections
         </h4>
