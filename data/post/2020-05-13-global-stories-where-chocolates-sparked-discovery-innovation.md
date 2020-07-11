@@ -1,0 +1,9 @@
+---
+template: pdfList
+path: /global-stories-where-chocolates-sparked-discovery
+date: 2020-05-13T08:00:59.298Z
+title: Global stories where chocolates sparked discovery & innovation
+category: Food
+url: https://www.nationalgeographic.com/pdf/chocolate-ed-guide.pdf
+thumbnail: /assets/kaffee-meister-xhwntgj2n98-unsplash.jpg
+---

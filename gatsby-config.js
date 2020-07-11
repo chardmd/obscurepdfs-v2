@@ -1,6 +1,5 @@
 "use strict";
 
-const path = require("path");
 const siteConfig = require("./config.js");
 
 module.exports = {
@@ -27,8 +26,28 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "data",
-        path: path.join(__dirname, "data"),
+        name: "markdown-pages",
+        path: `${__dirname}/data`,
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+          {
+            resolve: "gatsby-remark-emojis",
+          },
+        ],
       },
     },
     // This plugin exposes helper functions for processing
@@ -128,6 +147,8 @@ module.exports = {
     },
     // add seo tags
     "gatsby-plugin-react-helmet",
+    // cms
+    "gatsby-plugin-netlify-cms",
     // Create robots.txt
     "gatsby-plugin-robots-txt",
     // Automatically generates a _headers file and a _redirects file
