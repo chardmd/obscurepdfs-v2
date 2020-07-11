@@ -30,6 +30,7 @@ module.exports = {
         name: "assets",
       },
     },
+    // content of the markdown
     {
       resolve: "gatsby-source-filesystem",
       options: {
