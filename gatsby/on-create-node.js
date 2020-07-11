@@ -12,13 +12,6 @@ const onCreateNode = ({ node, actions, getNode }) => {
   // into relative paths if a matching file is found.
   fmImagesToRelative(node);
 
-  // create artist slug
-  if (node.internal.type === "ArtistJson") {
-    const ARTISTS_PATH = "/artists";
-    const artistSlug = `${ARTISTS_PATH}/${kebabCase(slug(node.authorName))}/`;
-    createNodeField({ node, name: "artistSlug", value: artistSlug });
-  }
-
   // create collection slug
   if (node.internal.type === "CollectionJson") {
     const COLLECTIONS_PATH = "/c";

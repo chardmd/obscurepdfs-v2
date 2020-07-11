@@ -17,13 +17,12 @@ module.exports = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allCollectionJson {
+        allMarkdownRemark {
           edges {
             node {
               id
-              authorId
               fields {
-                collectionSlug
+                slug
               }
             }
           }
@@ -45,7 +44,7 @@ module.exports = async ({ graphql, actions, reporter }) => {
   // Instagram post. Since the scraped Instagram data
   // already includes an ID field, we just use that for
   // each page's path.
-  result.data.allCollectionJson.edges.forEach((edge) => {
+  result.data.allMarkdownRemark.edges.forEach((edge) => {
     // Gatsby uses Redux to manage its internal state.
     // Plugins and sites can use functions like "createPage"
     // to interact with Gatsby.
@@ -54,11 +53,10 @@ module.exports = async ({ graphql, actions, reporter }) => {
       // as a template component. The `context` is
       // optional but is often necessary so the template
       // can query data specific to each page.
-      path: `${edge.node.fields.collectionSlug}`, // was created in on-create-node
+      path: `${edge.node.fields.slug}`, // was created in on-create-node
       component: slash(collectionTemplate),
       context: {
         id: edge.node.id,
-        authorId: edge.node.authorId,
       },
     });
   });

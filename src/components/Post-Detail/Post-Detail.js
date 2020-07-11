@@ -7,36 +7,24 @@ import Share from "../Share";
 
 import styles from "./Post-Detail.module.scss";
 
-const PostDetail = ({ collectionDetail, artist }) => {
+const PostDetail = ({ collectionDetail }) => {
   const {
-    bigImage,
-    category,
-    description,
     id,
-    title,
+    frontmatter: { bigImage, category, url, title },
     fields: { collectionSlug },
   } = collectionDetail;
   const { big } = bigImage.childImageSharp;
-
-  const { authorName, smallImage } = artist;
-  const { small } = smallImage.childImageSharp;
-
-  const authorAvatar = small.src;
   return (
     <div onClick={(e) => e.stopPropagation()} className={styles.postDetail}>
       <div className={styles.mainWrapper}>
-        <Userbar avatar={authorAvatar} title={title} />
+        <Userbar avatar={title} title={title} />
         <Share
           slug={collectionSlug}
           title={title}
           options={{ size: 28, round: true }}
         />
         <div className={styles.detailWrapper}>
-          <Description
-            authorName={authorName}
-            category={category}
-            description={description}
-          />
+          <Description authorName={url} category={category} description={url} />
         </div>
       </div>
       <div to={`/${id}/`} className={styles.imageWrapper}>

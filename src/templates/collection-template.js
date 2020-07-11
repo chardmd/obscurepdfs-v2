@@ -16,16 +16,18 @@ const propTypes = {
 };
 
 const CollectionTemplate = ({ data, location }) => {
-  const { collectionDetail, artist } = data;
+  const { collectionDetail } = data;
+
+  const { frontmatter } = collectionDetail;
   return (
     <Layout location={location}>
       <SEO
-        seoTitle={collectionDetail.title}
-        seoDescription={collectionDetail.description}
-        seoImage={collectionDetail.image}
-        seoSlug={collectionDetail.fields.collectionSlug}
+        seoTitle={frontmatter.title}
+        seoDescription={frontmatter.bigImage}
+        seoImage={frontmatter.url}
+        seoSlug={frontmatter.path}
       />
-      <PostDetail collectionDetail={collectionDetail} artist={artist} />
+      <PostDetail collectionDetail={collectionDetail} />
     </Layout>
   );
 };
@@ -41,30 +43,21 @@ export default CollectionTemplate;
 // All GraphQL queries in Gatsby are run at build-time and
 // loaded as plain JSON files so have minimal client cost.
 export const pageQuery = graphql`
-  query($id: String!, $authorId: Int!) {
+  query($id: String!) {
     # Select the post which equals this id.
-    collectionDetail: collectionJson(id: { eq: $id }) {
-      ..._Collection
-      bigImage: image {
-        childImageSharp {
-          # Here we query for *multiple* image thumbnails to be
-          # created. So with no effort on our part, 100s of
-          # thumbnails are created. This makes iterating on
-          # designs effortless as we change the args
-          # for the query and we get new thumbnails.
-          big: fluid(maxWidth: 640, maxHeight: 640) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-    # select the artist
-    artist: artistJson(authorId: { eq: $authorId }) {
-      ..._Artist
-      smallImage: image {
-        childImageSharp {
-          small: fluid(maxWidth: 50, maxHeight: 50) {
-            ...GatsbyImageSharpFluid
+    collectionDetail: markdownRemark(id: { eq: $id }) {
+      ..._MarkdownRemark
+      frontmatter {
+        bigImage: image {
+          childImageSharp {
+            # Here we query for *multiple* image thumbnails to be
+            # created. So with no effort on our part, 100s of
+            # thumbnails are created. This makes iterating on
+            # designs effortless as we change the args
+            # for the query and we get new thumbnails.
+            big: fluid(maxWidth: 640, maxHeight: 640) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
