@@ -1,0 +1,16 @@
+@import "../../assets/variables";
+
+.navigation {
+  padding-top: 4.5rem;
+}
+
+.linkNoStyle {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.homeIcon {
+  color: white;
+  margin-right: 0.5rem;
+}

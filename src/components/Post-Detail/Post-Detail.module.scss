@@ -1,0 +1,77 @@
+@import "../../assets/variables";
+
+.postDetail {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+  @media (min-width: 750px) {
+    flex-direction: row-reverse;
+    margin-top: $base-line-height * 1;
+  }
+}
+
+.mainWrapper {
+  padding: $base-line-height * (3 / 4);
+  padding-bottom: 0;
+  @media (min-width: 750px) {
+    width: $base-line-height * 13;
+    padding: $base-line-height * 1;
+  }
+}
+
+.detailWrapper {
+  display: none;
+  @media (min-width: 750px) {
+    display: block;
+  }
+}
+
+.imageWrapper {
+  display: block;
+  background-color: lightgray;
+  flex: 1 0 0%;
+  width: 100%;
+  position: relative;
+}
+
+.imageContainer {
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageItem {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  vertical-align: baseline;
+  position: unset !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pad {
+  flex-direction: column;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.detail {
+  background: white;
+  padding: $base-line-height * (3 / 4);
+  display: block;
+  @media (min-width: 750px) {
+    display: none;
+  }
+}

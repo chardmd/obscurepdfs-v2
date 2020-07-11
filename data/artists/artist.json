@@ -1,0 +1,58 @@
+[
+  {
+    "authorId": 1,
+    "authorName": "Alois Lunzer",
+    "birthdate": "1677 – 1643",
+    "bio": "Alois Lunzer was an American Modernist painter, poet, and essayist. Hartley was born in Lewiston, Maine, where his English parents had settled",
+    "image": "1.jpg",
+    "featured": true
+  },
+  {
+    "authorId": 2,
+    "authorName": "Marsden Hartley",
+    "birthdate": "1877 – 1943",
+    "bio": "Marsden Hartley was an American Modernist painter, poet, and essayist. Hartley was born in Lewiston, Maine, where his English parents had settled",
+    "image": "2.jpg",
+    "featured": true
+  },
+  {
+    "authorId": 3,
+    "authorName": "John Doe",
+    "birthdate": "1877 – 1943",
+    "bio": "Marsden Hartley was an American Modernist painter, poet, and essayist. Hartley was born in Lewiston, Maine, where his English parents had settled",
+    "image": "2.jpg",
+    "featured": true
+  },
+  {
+    "authorId": 4,
+    "authorName": "Marlou",
+    "birthdate": "1877 – 1943",
+    "bio": "Marsden Hartley was an American Modernist painter, poet, and essayist. Hartley was born in Lewiston, Maine, where his English parents had settled",
+    "image": "2.jpg",
+    "featured": true
+  },
+  {
+    "authorId": 5,
+    "authorName": "Tulfo",
+    "birthdate": "1877 – 1943",
+    "bio": "Marsden Hartley was an American Modernist painter, poet, and essayist. Hartley was born in Lewiston, Maine, where his English parents had settled",
+    "image": "2.jpg",
+    "featured": true
+  },
+  {
+    "authorId": 6,
+    "authorName": "Warriors",
+    "birthdate": "1877 – 1943",
+    "bio": "1 Marsden Hartley was an American Modernist painter, poet, and essayist. Hartley was born in Lewiston, Maine, where his English parents had settled",
+    "image": "2.jpg",
+    "featured": true
+  },
+  {
+    "authorId": 7,
+    "authorName": "Warriors2",
+    "birthdate": "1877 – 1943",
+    "bio": "2 Marsden Hartley was an American Modernist painter, poet, and essayist. Hartley was born in Lewiston, Maine, where his English parents had settled",
+    "image": "2.jpg",
+    "featured": true
+  }
+]

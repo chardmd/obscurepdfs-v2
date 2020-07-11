@@ -1,0 +1,40 @@
+@import "../../../assets/variables";
+
+.description {
+  font-size: 0.75786rem;
+  line-height: 1.4;
+}
+
+.wrapper {
+  margin-bottom: $base-line-height * 1;
+  overflow: hidden;
+}
+
+.likes {
+  float: left;
+}
+
+.strong {
+  color: rgba(0, 0, 0, 0.4);
+  float: right;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: #f4f7fa;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mainText {
+  font-size: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+
+.subText {
+  font-size: 0.6rem;
+  margin-bottom: 0.4rem;
+}

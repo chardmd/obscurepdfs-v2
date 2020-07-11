@@ -1,0 +1,28 @@
+@import "../../assets/variables";
+
+.postItem {
+  display: block;
+  flex: 1 0 0%;
+  width: 100%;
+  position: relative;
+  max-width: 365px;
+  margin: 1px 2px;
+}
+
+.textWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  line-height: 2.1rem;
+  flex-direction: column;
+  margin: 1px;
+  text-align: center;
+}

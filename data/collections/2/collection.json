@@ -1,0 +1,106 @@
+[
+  {
+    "authorId": 2,
+    "title": "Men Towing A Barge (Study For Boubourouche)",
+    "category": "History",
+    "image": "towing-a-barge.jpg",
+    "date": "1885",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 1",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 2",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 3",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 4",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 5",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 6",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 7",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 8",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 9",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 10",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 11",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "authorId": 2,
+    "title": "Dark 12",
+    "category": "Abstract",
+    "image": "dark.jpg",
+    "date": "1990",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  }
+]
