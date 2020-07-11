@@ -22,7 +22,7 @@ collections:
       - { name: category, label: Category }
       - { name: url, label: URL }
       - label: Featured Image
-        name: thumbnail
+        name: image
         widget: image
         required: true
         hint: "Image size 1280x800 works best :)"

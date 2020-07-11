@@ -11,13 +11,17 @@ let touched = false;
 
 const PostItem = ({ collection }) => {
   const [hovering, setHovering] = useState(false);
-  const { smallImage, title, category, fields } = collection;
+  const {
+    smallImage,
+    frontmatter: { title, category },
+    fields,
+  } = collection;
   const { small } = smallImage.childImageSharp;
 
   return (
     <Link
       className={styles.postItem}
-      to={fields.collectionSlug}
+      to={fields.slug}
       onTouchStart={() => {
         touched = true;
       }}

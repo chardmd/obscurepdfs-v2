@@ -35,17 +35,12 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-prismjs",
+            resolve: "gatsby-remark-images",
             options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
+              maxWidth: 960,
+              withWebp: true,
+              ignoreFileExtensions: [],
             },
-          },
-          {
-            resolve: "gatsby-remark-emojis",
           },
         ],
       },

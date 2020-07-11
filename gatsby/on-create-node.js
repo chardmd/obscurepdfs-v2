@@ -1,8 +1,9 @@
 const slug = require("slug");
+const { createFilePath } = require("gatsby-source-filesystem");
 const kebabCase = require("lodash/kebabCase");
 
 // we dynamically create slugs on build time
-const onCreateNode = ({ node, actions }) => {
+const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   // create artist slug
@@ -19,6 +20,15 @@ const onCreateNode = ({ node, actions }) => {
       slug(node.title)
     )}/`;
     createNodeField({ node, name: "collectionSlug", value: collectionSlug });
+  }
+
+  if (node.internal.type === "MarkdownRemark") {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: "slug",
+      node,
+      value,
+    });
   }
 };
 
