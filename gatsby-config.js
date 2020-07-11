@@ -13,6 +13,46 @@ module.exports = {
     email: siteConfig.email,
   },
   plugins: [
+    // This plugin exposes helper functions for processing
+    // images with the NPM package “sharp”. It's used by
+    // several other plugins.
+    "gatsby-plugin-sharp",
+    // This plugin identifies file nodes that are images and
+    // transforms these to create new “ImageSharp” nodes.
+    // With them you can resize images and
+    // generate responsive image thumbnails.
+    "gatsby-transformer-sharp",
+    // Parses Markdown files using Remark
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+
+              maxWidth: 590,
+            },
+          },
+          // Copies local files linked to/from Markdown (.md|.markdown) files
+          // to the root directory (i.e., public folder).
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static",
+            },
+          },
+        ],
+      },
+    },
+    // This plugin transforms JSON file nodes.
+    "gatsby-transformer-json",
     /*
      * Gatsby's data processing layer begins with “source”
      * plugins.  You can source data nodes from anywhere but
@@ -26,42 +66,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "markdown-pages",
+        path: `${__dirname}/static/assets`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         path: `${__dirname}/data`,
       },
     },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 960,
-              withWebp: true,
-              ignoreFileExtensions: [],
-            },
-          },
-        ],
-      },
-    },
-    {
-      resolve: "gatsby-remark-normalize-paths",
-      options: {
-        pathFields: ["image"],
-      },
-    },
-    // This plugin exposes helper functions for processing
-    // images with the NPM package “sharp”. It's used by
-    // several other plugins.
-    "gatsby-plugin-sharp",
-    // This plugin identifies file nodes that are images and
-    // transforms these to create new “ImageSharp” nodes.
-    // With them you can resize images and
-    // generate responsive image thumbnails.
-    "gatsby-transformer-sharp",
-    // This plugin transforms JSON file nodes.
-    "gatsby-transformer-json",
     // This plugin takes your configuration and generates a
     // web manifest file so the site can be added to your
     // homescreen on Android.

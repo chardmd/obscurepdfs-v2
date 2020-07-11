@@ -18,7 +18,6 @@ export const markdownRemarkFragment = graphql`
       category
       url
       path
-      image
     }
     # do not specify the image here, as custom images have different size specifications
   }
