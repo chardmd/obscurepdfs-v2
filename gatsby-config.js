@@ -35,7 +35,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/data`,
-        name: "content",
+        name: "data",
       },
     },
     // This plugin identifies file nodes that are images and

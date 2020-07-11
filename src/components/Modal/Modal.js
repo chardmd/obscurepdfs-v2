@@ -75,11 +75,11 @@ class CustomModal extends React.Component {
       <StaticQuery
         query={graphql`
           query {
-            allCollectionJson {
+            allMarkdownRemark {
               edges {
                 node {
                   fields {
-                    collectionSlug
+                    slug
                   }
                 }
               }
@@ -88,7 +88,7 @@ class CustomModal extends React.Component {
         `}
         render={(data) => {
           if (!posts) {
-            posts = data.allCollectionJson.edges.map((e) => e.node.fields);
+            posts = data.allMarkdownRemark.edges.map((e) => e.node.fields);
           }
           return (
             <div

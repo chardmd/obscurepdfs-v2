@@ -11,7 +11,6 @@ import Layout from "../components/Layout"; // layout should be the last one, to 
 const propTypes = {
   data: PropTypes.shape({
     collectionDetail: PropTypes.object.isRequired,
-    artist: PropTypes.object.isRequired,
   }),
 };
 
