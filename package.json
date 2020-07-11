@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-bootstrap",
+  "name": "obscurepdfs-v2",
   "private": true,
-  "description": "Gatsby Bootstrap",
+  "description": "Obscure PDFs v2",
   "version": "1.0.0",
   "author": "Richard Dimalanta <hello@chardmd.com>",
   "dependencies": {

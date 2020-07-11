@@ -1,6 +1,6 @@
-# Gatsby Bootstrap
+# Obscure PDFs
 
-Custom starter template for building niche sites.
+Collection of delightful PDF articles that are exceptionally good reads
 
 ## Author
 
