@@ -26,7 +26,7 @@ class Gallery extends React.Component {
     const originalCollection = !isNil(props.collection) ? props.collection : [];
     this.state = {
       shuffledCollection: shuffle(originalCollection),
-      showingMore: postsToShow > POST_TO_SHOW,
+      showingMore: true,
       postsToShow,
     };
   }
@@ -80,19 +80,6 @@ class Gallery extends React.Component {
               ))}
             </div>
           )
-        )}
-        {!this.state.showingMore && shuffledCollection.length >= POST_TO_SHOW && (
-          <a
-            className={styles.loadMore}
-            onClick={() => {
-              this.setState({
-                postsToShow: this.state.postsToShow + POST_TO_SHOW,
-                showingMore: true,
-              });
-            }}
-          >
-            Load More
-          </a>
         )}
       </div>
     );
