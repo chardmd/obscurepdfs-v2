@@ -3,7 +3,7 @@ import Typography from "typography";
 const options = {
   googleFonts: [
     {
-      name: "Lora",
+      name: "Lato",
       styles: ["400", "400i", "700", "700i"],
     },
   ],
@@ -12,8 +12,8 @@ const options = {
   headerColor: "hsla(0,0%,0%,0.8)",
   bodyColor: "hsla(0,0%,0%,0.7)",
   blockMarginBottom: 0.75,
-  headerFontFamily: ["Lora", "sans-serif"],
-  bodyFontFamily: ["Lora", "sans-serif"],
+  headerFontFamily: ["Lato", "sans-serif"],
+  bodyFontFamily: ["Lato", "sans-serif"],
   overrideStyles: () => ({
     html: {
       overflowY: "scroll",

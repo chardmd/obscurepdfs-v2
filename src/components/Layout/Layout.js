@@ -3,7 +3,7 @@ import React from "react";
 import { ModalRoutingContext } from "gatsby-plugin-modal-routing";
 
 // Load the css for the Lora font.
-import "typeface-lora";
+import "typeface-lato";
 
 import CustomModal from "../Modal";
 import Navigation from "../Navigation";
