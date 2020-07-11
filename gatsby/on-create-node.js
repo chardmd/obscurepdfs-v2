@@ -7,6 +7,9 @@ const kebabCase = require("lodash/kebabCase");
 const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
+  // This takes every node returned by your gatsby-source plugins
+  // and converts any absolute paths in markdown frontmatter data
+  // into relative paths if a matching file is found.
   fmImagesToRelative(node);
 
   // create artist slug
