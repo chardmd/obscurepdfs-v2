@@ -45,12 +45,10 @@ const PostItem = ({ collection }) => {
         </Card.Img>
       </Card>
       {/* overlay */}
-      {hovering && (
-        <div className={styles.textWrapper}>
-          <div>{title}</div>
-          <cite>{category}</cite>
-        </div>
-      )}
+      <div className={styles.textWrapper}>
+        <div>{title}</div>
+        <cite>{category}</cite>
+      </div>
     </Link>
   );
 };
