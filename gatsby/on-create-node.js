@@ -1,10 +1,13 @@
 const slug = require("slug");
 const { createFilePath } = require("gatsby-source-filesystem");
+const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 const kebabCase = require("lodash/kebabCase");
 
 // we dynamically create slugs on build time
 const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
+
+  fmImagesToRelative(node);
 
   // create artist slug
   if (node.internal.type === "ArtistJson") {

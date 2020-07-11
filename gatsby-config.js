@@ -13,15 +13,39 @@ module.exports = {
     email: siteConfig.email,
   },
   plugins: [
-    // This plugin exposes helper functions for processing
-    // images with the NPM package “sharp”. It's used by
-    // several other plugins.
-    "gatsby-plugin-sharp",
+    /*
+     * Gatsby's data processing layer begins with “source”
+     * plugins.  You can source data nodes from anywhere but
+     * most sites.
+     * A site can have as many instances of
+     * gatsby-source-filesystem as you need.  Each plugin
+     * instance is configured with a root path where it then
+     * recursively reads in files and adds them to the data
+     * tree.
+     */
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: "assets",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/data`,
+        name: "content",
+      },
+    },
     // This plugin identifies file nodes that are images and
     // transforms these to create new “ImageSharp” nodes.
     // With them you can resize images and
     // generate responsive image thumbnails.
     "gatsby-transformer-sharp",
+    // This plugin exposes helper functions for processing
+    // images with the NPM package “sharp”. It's used by
+    // several other plugins.
+    "gatsby-plugin-sharp",
     // Parses Markdown files using Remark
     {
       resolve: "gatsby-transformer-remark",
@@ -53,28 +77,6 @@ module.exports = {
     },
     // This plugin transforms JSON file nodes.
     "gatsby-transformer-json",
-    /*
-     * Gatsby's data processing layer begins with “source”
-     * plugins.  You can source data nodes from anywhere but
-     * most sites.
-     * A site can have as many instances of
-     * gatsby-source-filesystem as you need.  Each plugin
-     * instance is configured with a root path where it then
-     * recursively reads in files and adds them to the data
-     * tree.
-     */
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/static/assets`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/data`,
-      },
-    },
     // This plugin takes your configuration and generates a
     // web manifest file so the site can be added to your
     // homescreen on Android.
