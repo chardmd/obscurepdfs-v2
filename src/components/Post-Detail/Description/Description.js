@@ -13,10 +13,10 @@ const Description = ({ authorName, category, description }) => (
     </div>
     <div>{description}</div>
     <div className={styles.download}>
-      <div className={styles.mainText}>Standard, 2286 x 2756px</div>
-      <div className={styles.subText}>JPG, Size: 5.41 MB, 300dpi</div>
+      <div className={styles.mainText}>Source: www.google.com</div>
+      <div className={styles.subText}>click below to view</div>
       <Button variant="outline-success" size="sm">
-        Download
+        View PDF
       </Button>
     </div>
   </div>
