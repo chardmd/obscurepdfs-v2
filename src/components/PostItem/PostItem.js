@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
 
@@ -12,6 +12,7 @@ const PostItem = ({ collection }) => {
     frontmatter: { title, category, smallImage },
     fields,
   } = collection;
+
   const { small } = smallImage.childImageSharp;
 
   return (

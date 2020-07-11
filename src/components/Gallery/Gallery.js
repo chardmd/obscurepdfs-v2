@@ -25,7 +25,7 @@ class Gallery extends React.Component {
 
     const originalCollection = !isNil(props.collection) ? props.collection : [];
     this.state = {
-      shuffledCollection: originalCollection, // shuffle(),
+      shuffledCollection: shuffle(originalCollection),
       showingMore: true,
       postsToShow,
     };
