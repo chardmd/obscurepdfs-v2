@@ -21,6 +21,9 @@ module.exports = async ({ graphql, actions, reporter }) => {
           edges {
             node {
               id
+              frontmatter {
+                title
+              }
               fields {
                 slug
               }
