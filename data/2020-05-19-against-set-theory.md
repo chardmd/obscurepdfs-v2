@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /against-set-theory
 date: 2020-05-19T10:09:28.344Z
 title: Against Set Theory
 category: Science

@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /studies-in-intelligence
 date: 2020-07-01T22:30:54.239Z
 title: Studies In Intelligence
 category: Society

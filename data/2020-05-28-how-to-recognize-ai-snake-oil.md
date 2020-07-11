@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /how-to-recognize-ai-snake-oil
 date: 2020-05-28T22:38:51.776Z
 title: How to recognize AI snake oil
 category: Tech

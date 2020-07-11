@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /the-future-of-remote-work
 date: 2020-05-29T07:59:29.446Z
 title: The Future of Remote Work
 category: Society

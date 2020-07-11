@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /a-history-of-clojure
 date: 2020-06-04T22:57:58.745Z
 title: A History of Clojure
 category: Tech

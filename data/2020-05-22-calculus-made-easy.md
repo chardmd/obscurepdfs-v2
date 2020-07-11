@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /calculus-made-easy
 date: 2020-05-22T09:29:45.861Z
 title: Calculus Made Easy
 category: Math

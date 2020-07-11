@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: "/an-artboard-oriented-creative-coding-environment"
 date: 2020-06-22T00:57:51.388Z
 title: "An Artboard-Oriented Creative Coding Environment"
 category: Tech

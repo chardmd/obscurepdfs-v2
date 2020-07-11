@@ -14,9 +14,6 @@ collections:
     create: true
     fields:
       - { label: Template, name: template, widget: hidden, default: pdfList }
-      - name: path
-        label: Path
-        widget: string
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: category, label: Category }

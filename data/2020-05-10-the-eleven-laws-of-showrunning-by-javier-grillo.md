@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /the-eleven-laws-of-show-running
 date: 2020-05-10T23:26:51.115Z
 title: The Eleven Laws of Showrunning, by Javier Grillo
 category: Media

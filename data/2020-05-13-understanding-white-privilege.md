@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /understand-white-privelege
 date: 2020-05-13T08:07:51.673Z
 title: Understanding White Privilege
 category: Society

@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /hard-coding-code-generation-tables
 date: 2020-05-25T01:02:47.858Z
 title: Hard-coding Code Generation Tables to Save Time & Space
 category: Tech

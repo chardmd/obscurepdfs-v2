@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /on-the-cruelty-of-really-teaching-computer-science
 date: 2020-05-11T00:01:53.161Z
 title: On the Cruelty of Really Teaching Computer Science
 category: Tech

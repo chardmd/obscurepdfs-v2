@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /ultimate-guide-to-finding-a-niche-market
 date: 2020-05-14T06:57:21.424Z
 title: The Ultimate Guide To Finding A Niche Market
 category: Marketing

@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /the-care-and-training-of-your-pet-rock
 date: 2020-05-17T22:13:27.499Z
 title: The care and training of your pet rock
 category: Society

@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /redefining-the-scale-of-social-problems
 date: 2020-06-13T03:22:21.363Z
 title: Redefining the Scale of Social Problems
 category: Society

@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /get-me-off-your-fucking-mailing-list
 date: 2020-05-10T23:50:49.320Z
 title: Get me off your fucking mailing list
 category: Funny

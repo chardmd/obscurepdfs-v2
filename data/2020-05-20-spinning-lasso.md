@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /spinning-lasso
 date: 2020-05-20T09:55:31.658Z
 title: Spinning Lasso
 category: Science

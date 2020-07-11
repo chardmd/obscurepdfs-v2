@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /the-basic-of-human-stupidity
 date: 2020-05-11T00:10:50.045Z
 title: The Basic Laws of Human Stupidity
 category: Psychology

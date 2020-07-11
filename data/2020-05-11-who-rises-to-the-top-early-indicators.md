@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /who-rises-to-the-top
 date: 2020-05-11T00:24:45.897Z
 title: Who Rises to the Top? Early Indicators
 category: Psychology

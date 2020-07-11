@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /linux-productivity-tools
 date: 2020-05-19T10:05:06.867Z
 title: Linux Productivity Tools
 category: Tech

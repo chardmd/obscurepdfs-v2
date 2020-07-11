@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /black-on-black-violence
 date: 2020-05-13T08:11:19.158Z
 title: Black-on-Black Violence
 category: Society

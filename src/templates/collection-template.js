@@ -17,14 +17,17 @@ const propTypes = {
 const CollectionTemplate = ({ data, location }) => {
   const { collectionDetail } = data;
 
-  const { frontmatter } = collectionDetail;
+  const {
+    frontmatter,
+    fields: { slug },
+  } = collectionDetail;
   return (
     <Layout location={location}>
       <SEO
         seoTitle={frontmatter.title}
         seoDescription={frontmatter.bigImage}
         seoImage={frontmatter.url}
-        seoSlug={frontmatter.path}
+        seoSlug={slug}
       />
       <PostDetail collectionDetail={collectionDetail} />
     </Layout>

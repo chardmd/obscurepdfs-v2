@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /self-awareness-for-introverts
 date: 2020-05-12T22:17:28.893Z
 title: Self-Awareness for Introverts
 category: Tech

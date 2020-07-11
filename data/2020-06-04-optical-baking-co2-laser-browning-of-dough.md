@@ -1,6 +1,5 @@
 ---
 template: pdfList
-path: /optical-baking-co2-laser-browning-of-dough
 date: 2020-06-04T22:51:42.893Z
 title: "Optical Baking: CO2 Laser Browning of Dough"
 category: Science
