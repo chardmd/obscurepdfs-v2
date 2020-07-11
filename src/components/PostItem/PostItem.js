@@ -7,10 +7,7 @@ import { Card } from "react-bootstrap";
 
 import styles from "./PostItem.module.scss";
 
-let touched = false;
-
 const PostItem = ({ collection }) => {
-  const [hovering, setHovering] = useState(false);
   const {
     frontmatter: { title, category, smallImage },
     fields,
@@ -21,19 +18,6 @@ const PostItem = ({ collection }) => {
     <Link
       className={styles.postItem}
       to={fields.slug}
-      onTouchStart={() => {
-        touched = true;
-      }}
-      onMouseEnter={() => {
-        if (!touched) {
-          setHovering(true);
-        }
-      }}
-      onMouseLeave={() => {
-        if (!touched) {
-          setHovering(false);
-        }
-      }}
       // open modal
       state={{
         modal: true,
