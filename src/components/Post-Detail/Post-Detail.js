@@ -17,14 +17,14 @@ const PostDetail = ({ collectionDetail }) => {
   return (
     <div onClick={(e) => e.stopPropagation()} className={styles.postDetail}>
       <div className={styles.mainWrapper}>
-        <Userbar avatar={title} title={title} />
+        <Userbar title={title} />
         <Share
           slug={collectionSlug}
           title={title}
           options={{ size: 28, round: true }}
         />
         <div className={styles.detailWrapper}>
-          <Description authorName={url} category={category} description={url} />
+          <Description category={category} url={url} />
         </div>
       </div>
       <div to={`/${id}/`} className={styles.imageWrapper}>
@@ -34,7 +34,7 @@ const PostDetail = ({ collectionDetail }) => {
         </div>
       </div>
       <div className={styles.detail}>
-        <Description />
+        <Description category={category} url={url} />
       </div>
     </div>
   );
