@@ -1,5 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  # change repo to your git repository url
+  repo: chardmd/obscurepdfs-v2
 
 media_folder: static/assets
 public_folder: /assets
