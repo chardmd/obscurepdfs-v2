@@ -30,8 +30,8 @@ class CustomModal extends React.Component {
 
   findCurrentIndex() {
     const index = findIndex(posts, (post) => {
-      const slugPath = this.props.location.pathname.split("/c")[1];
-      return post.collectionSlug.includes(slugPath);
+      const slugPath = this.props.location.pathname.split("/")[1];
+      return post.slug.includes(slugPath);
     });
     return index;
   }
@@ -49,7 +49,7 @@ class CustomModal extends React.Component {
       } else {
         nextPost = posts[currentIndex + 1];
       }
-      navigate(`${nextPost.collectionSlug}`, { state: { modal: true } });
+      navigate(`${nextPost.slug}`, { state: { modal: true } });
     }
   }
 
@@ -66,7 +66,7 @@ class CustomModal extends React.Component {
       } else {
         previousPost = posts[currentIndex - 1];
       }
-      navigate(`${previousPost.collectionSlug}`, { state: { modal: true } });
+      navigate(`${previousPost.slug}`, { state: { modal: true } });
     }
   }
 
@@ -92,7 +92,9 @@ class CustomModal extends React.Component {
           }
           return (
             <div
-              onClick={() => navigate(this.props.closeTo)}
+              onClick={() =>
+                navigate(this.props.closeTo, { state: { noScroll: true } })
+              }
               className={styles.ModuleModal}
             >
               <div className={styles.wrapperBody}>
@@ -107,7 +109,9 @@ class CustomModal extends React.Component {
                 />
               </div>
               <Close
-                onClick={() => navigate(this.props.closeTo)}
+                onClick={() =>
+                  navigate(this.props.closeTo, { state: { noScroll: true } })
+                }
                 className={styles.closeButton}
                 state={{
                   noScroll: true,
