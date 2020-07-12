@@ -1,5 +1,4 @@
 import React from "react";
-import HomeIcon from "react-icons/lib/fa/home";
 import { Link } from "gatsby";
 
 // react-bootstrap
@@ -17,7 +16,6 @@ const Navigation = () => {
         <Container>
           <Link to="/" className="_link-no-style">
             <h1>
-              <HomeIcon className={styles.homeIcon} />
               <Navbar.Brand as="span">
                 <span>{siteMetadata.title}</span>
               </Navbar.Brand>
