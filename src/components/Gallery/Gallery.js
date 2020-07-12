@@ -76,8 +76,8 @@ class Gallery extends React.Component {
         <tbody>
           {/* posts */}
           {chunk(shuffledCollection.slice(0, this.state.postsToShow), 3).map(
-            (chunk) => (
-              <tr>
+            (chunk, i) => (
+              <tr key={i}>
                 {chunk[0] && (
                   <td>
                     <PostItem
