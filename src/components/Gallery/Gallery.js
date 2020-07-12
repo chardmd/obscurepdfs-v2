@@ -3,10 +3,11 @@ import chunk from "lodash/chunk";
 import isNil from "lodash/isNil";
 import React from "react";
 
+// react-bootstrap
+import { Table } from "react-bootstrap";
+
 import PostItem from "../PostItem";
 import shuffle from "../../utils/shuffle";
-
-import styles from "./Gallery.module.scss";
 
 const POST_TO_SHOW = 12;
 
@@ -71,22 +72,44 @@ class Gallery extends React.Component {
     }
 
     return (
-      <div className={styles.gallery}>
-        {/* posts */}
-        {chunk(shuffledCollection.slice(0, this.state.postsToShow), 3).map(
-          (chunk, i) => (
-            <div key={`chunk-${i}`} className={styles.wrapper}>
-              {chunk.map((node) => (
-                <PostItem
-                  key={node.id}
-                  collection={node}
-                  onClick={(post) => this.setState({ activePost: post })}
-                />
-              ))}
-            </div>
-          )
-        )}
-      </div>
+      <Table borderless size="sm" responsive>
+        <tbody>
+          {/* posts */}
+          {chunk(shuffledCollection.slice(0, this.state.postsToShow), 3).map(
+            (chunk) => (
+              <tr>
+                {chunk[0] && (
+                  <td>
+                    <PostItem
+                      key={chunk[0].id}
+                      collection={chunk[0]}
+                      onClick={(post) => this.setState({ activePost: post })}
+                    />
+                  </td>
+                )}
+                {chunk[1] && (
+                  <td>
+                    <PostItem
+                      key={chunk[1].id}
+                      collection={chunk[1]}
+                      onClick={(post) => this.setState({ activePost: post })}
+                    />
+                  </td>
+                )}
+                {chunk[2] && (
+                  <td>
+                    <PostItem
+                      key={chunk[2].id}
+                      collection={chunk[2]}
+                      onClick={(post) => this.setState({ activePost: post })}
+                    />
+                  </td>
+                )}
+              </tr>
+            )
+          )}
+        </tbody>
+      </Table>
     );
   }
 }

@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <Jumbotron className={styles.banner}>
       <Container>
-        <h1 className="display-4">{siteMetadata.title}</h1>
+        <h1 className="display-5">{siteMetadata.title}</h1>
         <p className="lead">{siteMetadata.description}</p>
       </Container>
     </Jumbotron>

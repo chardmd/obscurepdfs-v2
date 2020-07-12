@@ -1,16 +1,1 @@
 @import "../../styles/variables";
-
-.gallery {
-  display: flex;
-  align-items: stretch;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-
-.wrapper {
-  display: flex;
-  align-items: stretch;
-  flex-shrink: 0;
-  flex-direction: row;
-  margin-bottom: $base-line-height * (1 / 8);
-}
