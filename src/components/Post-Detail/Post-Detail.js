@@ -11,18 +11,14 @@ const PostDetail = ({ collectionDetail }) => {
   const {
     id,
     frontmatter: { bigImage, category, url, title },
-    fields: { collectionSlug },
+    fields: { slug },
   } = collectionDetail;
   const { big } = bigImage.childImageSharp;
   return (
     <div onClick={(e) => e.stopPropagation()} className={styles.postDetail}>
       <div className={styles.mainWrapper}>
         <Userbar title={title} />
-        <Share
-          slug={collectionSlug}
-          title={title}
-          options={{ size: 28, round: true }}
-        />
+        <Share slug={slug} title={title} options={{ size: 28, round: true }} />
         <div className={styles.detailWrapper}>
           <Description category={category} url={url} />
         </div>
