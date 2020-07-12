@@ -12,7 +12,7 @@ const Navigation = () => {
   const siteMetadata = useSiteMetadata();
   return (
     <header>
-      <Navbar expand="md" bg="dark" variant="dark" fixed="top">
+      <Navbar expand="md" bg="primary" variant="dark" fixed="top">
         <Container>
           <Link to="/" className="_link-no-style">
             <h1>
@@ -21,14 +21,6 @@ const Navigation = () => {
               </Navbar.Brand>
             </h1>
           </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse>
-            <Nav className="ml-auto">
-              <Link to="/about" className={styles.linkNoStyle}>
-                <Nav.Link as="span">About</Nav.Link>
-              </Link>
-            </Nav>
-          </Navbar.Collapse>
         </Container>
       </Navbar>
     </header>
