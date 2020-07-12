@@ -35,7 +35,12 @@ class Gallery extends React.Component {
     const distanceToBottom =
       document.documentElement.offsetHeight -
       (window.scrollY + window.innerHeight);
-    if (this.state.showingMore && distanceToBottom < 100) {
+    if (
+      this.state.showingMore &&
+      distanceToBottom < 100 &&
+      // prevent any render, once all the post has been shown
+      this.state.postsToShow <= this.state.shuffledCollection.length
+    ) {
       this.setState({ postsToShow: this.state.postsToShow + POST_TO_SHOW });
     }
     this.ticking = false;
