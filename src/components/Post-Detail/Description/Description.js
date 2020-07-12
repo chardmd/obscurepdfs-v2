@@ -1,7 +1,7 @@
 import React from "react";
 
 // react-bootstrap
-import { Button } from "react-bootstrap";
+import { Button, Badge } from "react-bootstrap";
 
 import getDomain from "../../../utils/get-domain";
 
@@ -10,7 +10,11 @@ import styles from "./Description.module.scss";
 const Description = ({ category, url }) => (
   <div className={styles.description}>
     <div className={styles.wrapper}>
-      <strong className={styles.likes}>{category}</strong>
+      <h5>
+        <Badge pill variant="info" className={styles.likes}>
+          {category}
+        </Badge>
+      </h5>
     </div>
     <div className={styles.download}>
       <div className={styles.mainText}>Click the button to view</div>
@@ -20,7 +24,6 @@ const Description = ({ category, url }) => (
         rel="nofollow noopener noreferrer"
         target="_blank"
         variant="success"
-        size="sm"
       >
         View PDF
       </Button>
