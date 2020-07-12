@@ -1,8 +1,8 @@
 ---
 template: pdfList
 date: 2020-07-12T22:49:20.706Z
-title: "Reflections on Trusting Trust "
-category: Tech
-url: https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf
-image: /assets/dave-lowe-nrnsil1nh9y-unsplash.jpg
+title: Attention without awareness in blindsight
+category: Psychology
+url: https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.1999.0850
+image: /assets/eugene-zhyvchik-umtatyzumds-unsplash.jpg
 ---
