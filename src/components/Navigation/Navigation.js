@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 
 // react-bootstrap
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Navbar, Container } from "react-bootstrap";
 
 import useSiteMetadata from "../../hooks/use-site-metadata";
-
-import styles from "./Navigation.module.scss";
 
 const Navigation = () => {
   const siteMetadata = useSiteMetadata();
