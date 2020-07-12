@@ -19,7 +19,7 @@ const Contact = ({ location }) => {
           <Col lg={12}>
             <Card className="border-0">
               <Card.Body>
-                <p>
+                <p className="lead">
                   If you need help with anything, please email{" "}
                   <span>{siteMetadata.email}</span>
                 </p>
