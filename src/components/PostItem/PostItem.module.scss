@@ -27,6 +27,10 @@
   margin: 1px;
   text-align: center;
 
+  div {
+    width: 85%;
+  }
+
   &:hover {
     background-color: rgba(19, 18, 18, 0.3);
   }

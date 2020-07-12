@@ -9,7 +9,7 @@ import styles from "./PostItem.module.scss";
 
 const PostItem = ({ collection }) => {
   const {
-    frontmatter: { title, category, smallImage },
+    frontmatter: { title, smallImage },
     fields,
   } = collection;
 
@@ -32,7 +32,6 @@ const PostItem = ({ collection }) => {
       {/* overlay */}
       <div className={styles.textWrapper}>
         <div>{title}</div>
-        <cite>{category}</cite>
       </div>
     </Link>
   );
