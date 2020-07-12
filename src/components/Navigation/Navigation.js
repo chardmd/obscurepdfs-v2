@@ -12,7 +12,7 @@ import styles from "./Navigation.module.scss";
 const Navigation = () => {
   const siteMetadata = useSiteMetadata();
   return (
-    <header className={styles.navigation}>
+    <header>
       <Navbar expand="md" bg="dark" variant="dark" fixed="top">
         <Container>
           <Link to="/" className="_link-no-style">
