@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 // react-bootstrap
 import { Container } from "react-bootstrap";
@@ -6,14 +6,8 @@ import { Container } from "react-bootstrap";
 import styles from "./Page.module.scss";
 
 const Page = ({ title, children }) => {
-  const pageRef = useRef();
-
-  useEffect(() => {
-    pageRef.current.scrollIntoView();
-  });
-
   return (
-    <Container ref={pageRef}>
+    <Container>
       <div className={styles.page}>
         {title && <h1>{title}</h1>}
         <div>{children}</div>
